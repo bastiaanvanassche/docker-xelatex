@@ -20,7 +20,10 @@ RUN apt-get update && \
   texlive-generic-recommended \
   texlive-lang-english \
   texlive-lang-portuguese \
-  texlive-xetex && \
+  texlive-xetex \
+  texlive-latex-recommended \
+  texlive-latex-extra \
+  fonts-texgyre   && \
   apt-get autoclean && apt-get --purge --yes autoremove && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
